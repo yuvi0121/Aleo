@@ -99,7 +99,7 @@ program tictactoe.aleo {
             r3: Row { c1: r3c1, c2: r3c2, c3: r3c3 },
         };
 
-        // Check if the game is over.
+        // Check for winner and if the game is over.
         if check_for_win(updated, 1u8) {
             return (updated, 1u8);
         } else if check_for_win(updated, 2u8) {
